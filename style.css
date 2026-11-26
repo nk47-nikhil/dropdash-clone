@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Dropdash Exact Design Tokens & Styles
+   Extracted from app.dropdash.co/shipment
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --dd-purple: #5e2c9e;
+  --dd-purple-dark: #4a1d85;
+  --dd-purple-light: #faf5ff;
+  --dd-purple-pill: #f3e8ff;
+  --dd-bg: #f9fafb;
+  --dd-border: #e5e7eb;
+  --dd-text-main: #111827;
+  --dd-text-muted: #6b7280;
+  --dd-table-header: #e5e5eb;
+  --dd-table-header-text: #5a6a85;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dd-bg);
+  color: var(--dd-text-main);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Sidebar transition */
+.sidebar-transition {
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+/* Dropdown shadow */
+.custom-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Row hover */
+.table-row-hover:hover {
+  background-color: #f9fafb;
+}
+
+/* Status Tab active */
+.tab-active {
+  background-color: #ffffff;
+  color: #111827;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+/* Eye icon button and dots button */
+.action-btn {
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.action-btn:hover {
+  background-color: #f3f4f6;
+}
